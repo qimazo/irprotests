@@ -126,3 +126,28 @@ barplot(c(total_protester_deaths, total_security_deaths),
         ylab = "Number Killed",
         col = c("firebrick", "steelblue"))
 ratio
+
+
+
+
+plot(protests$Date, protests$daily_deaths, type = "l", 
+     main = "Daily Protester Deaths Over Time", 
+     xlab = "Date", ylab = "Deaths per day", 
+     col = "firebrick", lwd = 2)
+
+
+
+
+plot(protests$daily_cities, protests$daily_universities, 
+     main = "Cities Involved vs. Universities Involved (Daily)", 
+     xlab = "New cities involved that day", 
+     ylab = "New universities involved that day", 
+     pch = 19, col = "darkred")
+
+
+
+plot(protests$daily_protests, protests$daily_arrests, 
+     main = "Protests vs. Arrests (Daily)", 
+     xlab = "New protests that day", 
+     ylab = "New arrests that day", 
+     pch = 19, col = "darkblue")
